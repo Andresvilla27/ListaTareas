@@ -3,27 +3,27 @@ class="add-form"
 (ngSubmit)="onSubmit()" 
 *ngIf="showAddTask">
 <div class="form-control">
-    <label for="text">Task</label>
+    <label for="text">Tarea</label>
     <input 
         type="text"
         name="text"
         id="text"
-        placeholder="Add Task text"
+        placeholder="Agrega tarea"
         [(ngModel)]="text"
         >
 </div>
 <div class="form-control">
-    <label for="day">Day & Time</label>
+    <label for="day">Dia y Hora</label>
     <input 
         type="text" 
         name="day" 
         id="day" 
-        placeholder="Add Day & Time"
+        placeholder="Agrega Dia y Hora"
         [(ngModel)]="day"
     >
 </div>
 <div class="form-control form-control-check">
-    <label for="reminder">Reminder</label>
+    <label for="reminder">Recordatorio</label>
     <input 
         type="checkbox" 
         name="reminder" 
@@ -31,5 +31,5 @@ class="add-form"
         [(ngModel)]="reminder"
     >
 </div>
-<input type="submit" value="SaveTask" class="btn btn-block">
+<input type="submit" value="Guardar tarea" class="btn btn-block">
 </form>
